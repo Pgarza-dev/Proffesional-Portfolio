@@ -123,10 +123,10 @@ html {
   font-size: 3rem;
 }
 .about-me {
-  width: 400px;
-  text-align: left;
-  line-height: 1.3rem;
-  font-size: 1.2rem;
+  width: 450px;
+  text-align: justify;
+  line-height: 1.8rem;
+  font-size: 1.5rem;
   
 }
 .contact-links {
@@ -136,6 +136,9 @@ html {
 .contact-links > a {
   padding-right: 10px;
   color: black;
+}
+.fa-brands {
+  font-size: 2rem;
 }
 .fa-xl {
   color: rgb(65, 65, 255);
