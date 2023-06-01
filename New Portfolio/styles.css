@@ -281,6 +281,7 @@ html {
 .protifolio-title {
   padding: 0px 50px 0px 50px;
   margin-bottom: 30px;
+  font-size: 1.5rem;
 }
 .protifolio-title h3 {
   margin-bottom: 1rem;
@@ -290,7 +291,7 @@ html {
   color: var(--hover-btm-border);
 }
 .subject-description {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .myself-section p::before {
   content: open-quote;
