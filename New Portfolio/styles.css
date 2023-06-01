@@ -31,24 +31,25 @@ html {
   width: 100%;
   justify-content: space-between;
 }
+.nav-container h4 {
+  font-size: 1.2rem;
+}
 .nav-li {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  width: 350px;
+  width: 25rem;
 }
 .nav-li a {
-  text-decoration: none;
   position: relative;
   color: rgb(0, 0, 0);
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0.5rem;
   text-align: center;
   text-decoration: none;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.1rem;
 }
 .nav-li a::after {
   content: '';
@@ -78,10 +79,10 @@ html {
 }
 .fa-linkedin-in:hover {
   color: white;
-  background-color: blue;
+  background-color: var(--hover-btm-border);
 }
 .fa-github:hover {
-  background-color: black;
+  background-color: var(--hover-btm-border);
   color: white;
 }
 .fa-arrow-up-right-from-square:hover {
@@ -116,11 +117,13 @@ html {
   align-content: center;
   text-align: center;
   font-size: 1rem;
-  height: 100vh;
+  height: 95vh;
   flex-wrap: wrap;
 }
 .intro-title {
   font-size: 3rem;
+  border-bottom: 4px solid var(--hover-btm-border);
+  line-height: 5rem;
 }
 .about-me {
   width: 450px;
@@ -227,6 +230,8 @@ html {
   position: relative;
   z-index: 10;
   /* border: 3px solid green; */
+  width: 17rem;
+  height: 26rem;
 }
 .my-photo {
   width: 50%;
@@ -235,6 +240,11 @@ html {
   object-fit: revert;
   border-radius: 10px;
   padding: .2rem;
+}
+.scroll-down-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ABOUT ME SECTION */
@@ -273,7 +283,7 @@ html {
 }
 
 .subject-title {
-  color: var(--subject-title);
+  color: var(--hover-btm-border);
 }
 .subject-description {
   font-size: 1.8rem;
