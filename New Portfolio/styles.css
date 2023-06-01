@@ -242,10 +242,10 @@ html {
   display: flex;
   flex-flow: column wrap;
   max-width: 500px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   flex-direction: column;
   gap: 1rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 #about-me {
   padding-top: 60px;
@@ -276,7 +276,7 @@ html {
   color: var(--subject-title);
 }
 .subject-description {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 }
 .myself-section p::before {
   content: open-quote;
@@ -299,8 +299,9 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  line-height: 1.3rem;
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 1.5rem;
   gap: 1rem;
   justify-content: center;
 }
