@@ -9,7 +9,7 @@
   --subject-title: rgba(0, 0, 255, 0.525);
 }
 body {
-  font-family: 'Poppins' 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Poppins" "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -52,7 +52,7 @@ html {
   letter-spacing: 0.1rem;
 }
 .nav-li a::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--hover-btm-border);
   height: 3px;
@@ -130,7 +130,6 @@ html {
   text-align: justify;
   line-height: 1.8rem;
   font-size: 1.5rem;
-  
 }
 .contact-links {
   margin-top: 15px;
@@ -184,7 +183,7 @@ html {
   align-items: center;
 }
 .img-border::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 80px;
   height: 180%;
@@ -193,7 +192,7 @@ html {
   animation: fade 4s ease-in-out infinite;
 }
 .img-border::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 4px;
   background: white;
@@ -239,7 +238,7 @@ html {
   aspect-ratio: 3/2;
   object-fit: revert;
   border-radius: 10px;
-  padding: .2rem;
+  padding: 0.2rem;
 }
 .scroll-down-icon {
   display: flex;
