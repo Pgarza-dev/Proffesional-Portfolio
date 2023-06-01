@@ -305,10 +305,11 @@ html {
 }
 
 /* PROJECTS SECTION */
-.rainy-days-img {
+.project-img {
   width: 25rem;
   height: 100%;
   border-radius: 20px;
+  box-shadow: -20px 20px 20px 0px #d2d2d2;
 }
 .project-description {
   display: flex;
