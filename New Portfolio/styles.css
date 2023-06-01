@@ -249,6 +249,7 @@ html {
 .scroll-down-icon > a {
   color: black;
   text-decoration: none;
+  font-style: italic;
 }
 
 /* ABOUT ME SECTION */
