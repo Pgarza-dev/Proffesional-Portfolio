@@ -246,10 +246,15 @@ html {
   flex-direction: column;
   align-items: center;
 }
+
 .scroll-down-icon > a {
   color: black;
   text-decoration: none;
   font-style: italic;
+}
+.fa-sort-down {
+  font-size: 2rem;
+  color: var(--hover-btm-border);
 }
 
 /* ABOUT ME SECTION */
