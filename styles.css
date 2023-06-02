@@ -119,6 +119,7 @@ html {
   font-size: 1rem;
   height: 95vh;
   flex-wrap: wrap;
+  margin-top: 60px;
 }
 .intro-title {
   font-size: 3rem;
