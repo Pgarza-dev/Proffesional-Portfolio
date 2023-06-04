@@ -104,7 +104,7 @@ html {
   width: 100%;
   justify-content: flex-end;
   z-index: 2;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.679); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.679);
 }
 .nav-container h4 {
   font-size: 1.2rem;
@@ -193,7 +193,7 @@ html {
   align-content: center;
   text-align: center;
   font-size: 1rem;
-  height: 95vh;
+  height: 90vh;
   flex-wrap: wrap;
   margin-top: 60px;
 }
@@ -327,6 +327,7 @@ html {
   color: black;
   text-decoration: none;
   font-style: italic;
+  font-size: 1.5rem;
 }
 .fa-sort-down {
   font-size: 2rem;
