@@ -329,9 +329,11 @@ html {
   font-style: italic;
   font-size: 1.5rem;
 }
-.fa-sort-down {
-  font-size: 2rem;
-  color: var(--hover-btm-border);
+.fa-icon-spacing {
+  display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2.5rem;
 }
 
 /* ABOUT ME SECTION */
