@@ -2,7 +2,7 @@ console.log("index.js connected");
 
 // Hamburguer Menu
 const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
+const navMenu = document.querySelector('.nav-li');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -15,3 +15,5 @@ document.querySelectorAll('.nav-link').forEach((n) =>
     navMenu.classList.remove('active');
   })
 );
+
+

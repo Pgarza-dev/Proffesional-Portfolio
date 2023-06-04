@@ -17,6 +17,67 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
+/* HAMBURGER MENU */
+.nav-link {
+  transition: 0.7s ease;
+  color: black;
+  text-decoration: none;
+}
+.nav-link:hover {
+  border: 1px solid white;
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+/* HAMBURGER MENU MQ */
+@media (max-width: 740px) {
+  .hamburger {
+    display: block;
+    padding: 1.5rem;
+  }
+  /* used :nth-child() to target specific child elements based on their position */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-li {
+    position: fixed;
+    left: -100%;
+    top: 57px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-anchors {
+    margin: 16px 0;
+  }
+  .nav-li.active {
+    left: 0;
+  }
+}
+
+
 
 .nav-container {
   display: flex;
@@ -24,12 +85,13 @@ html {
   position: fixed;
   top: 0;
   right: 0px;
-  padding: 20px 50px;
+  padding: 1rem;
   background: white;
-  z-index: 11;
+  /* z-index: 11; */
   height: 60px;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
+  z-index: 2;
 }
 .nav-container h4 {
   font-size: 1.2rem;
@@ -50,6 +112,7 @@ html {
   text-align: center;
   text-decoration: none;
   letter-spacing: 0.1rem;
+  z-index: 1;
 }
 .nav-li a::after {
   content: "";
@@ -228,7 +291,7 @@ html {
 }
 .img-border img {
   position: relative;
-  z-index: 10;
+  z-index: 1;
   /* border: 3px solid green; */
   width: 17rem;
   height: 26rem;
