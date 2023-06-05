@@ -4,6 +4,7 @@ console.log("index.js connected");
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-li');
 const pgarzaDev = document.querySelector('.pgarza-dev');
+const projects = document.querySelector('.project-menu');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -14,14 +15,6 @@ hamburger.addEventListener('click', () => {
     pgarzaDev.style.display = 'none';
   }
 });
-
-// hamburger.addEventListener('click', function() {
-//   pgarzaDev.style.display = 'none';
-// });
-// document.getElementsByClassName(".pgarza-dev").style.display = "block";
-
-
-
 
 document.querySelectorAll('.nav-link').forEach((n) =>
   n.addEventListener('click', () => {
