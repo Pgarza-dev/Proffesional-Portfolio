@@ -5,7 +5,7 @@
 }
 :root {
   --img-border: linear-gradient(#00ccff, #d400d4);
-  --hover-btm-border: orangered;
+  --hover-btm-border: #ff4500;
   --subject-title: rgba(0, 0, 255, 0.525);
 }
 body {
@@ -13,7 +13,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
-  max-width: 1024px;
+  max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -363,10 +363,14 @@ html {
 .portifolio-section {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 3rem;
-  margin: 0px auto 400px auto;
-  padding: 0 50px 0 50px;
-  max-width: 1024px;
+  margin: 3rem auto;
+  /* margin: 0px auto 400px auto; */
+  /* padding: 0 50px 0 50px; */
+  /* max-width: 1024px; */
+  background-color: #37739d47; 
+  padding: 2rem;
 }
 .portifolio-title {
   padding: 0px 50px 0px 50px;
@@ -397,9 +401,10 @@ html {
 /* PROJECTS SECTION */
 .project-img {
   width: 25rem;
+  border:  .2rem solid rgba(243, 243, 243, 0);
   /* height: 100%; */
-  border-radius: 20px;
-  box-shadow: -20px 20px 20px 0px #d2d2d2;
+  /* border-radius: 20px; */
+  /* box-shadow: -20px 20px 20px 0px #d2d2d2; */
 }
 .project-img:hover {
   border: .2rem solid rgba(243, 243, 243, 0.278);
