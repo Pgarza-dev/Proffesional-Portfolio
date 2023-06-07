@@ -4,7 +4,7 @@ This is a Portfolio I built to showcase my work during my first year at Noroff. 
 of this project was to display all my projects I have made over the course of my first year
 at Noroff.
 
-![image](Screenshot%20blog%20site.jpg)
+![image](Screenshot blog site.jpg)
 
 ### Discription
 
