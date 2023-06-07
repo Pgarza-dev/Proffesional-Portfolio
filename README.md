@@ -5,6 +5,7 @@ of this project was to display all my projects I have made over the course of my
 at Noroff.
 
 ![image](<img src="images/portfolio-screen-shot.jpg>)
+![](images/portfolio-screen-shot.jpg)
 
 ### Discription
 
