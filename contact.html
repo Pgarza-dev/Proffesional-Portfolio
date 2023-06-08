@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Page</title>
+
+    <script
+    src="https://kit.fontawesome.com/a6b44b4960.js"
+    crossorigin="anonymous"
+    ></script>
+</head>
+
+<body>
+    <main>
+        <form name="messageForm" id="form" class="contact-form" action="message.html">
+            <div>
+                <p>Message sent.</p>
+            </div>
+            <div>
+                <a href="index.html">Return to Home</a>
+            </div>
+            <label for="name">
+                <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+                />
+            </label>
+            <label for="email">
+                <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+                />
+            </label>
+            <label for="message">
+                <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+                required
+                ></textarea>
+            </label>
+            <button type="submit" class="submit-message-btn">Send</button>
+        </form>
+    </main>
+</body>
+</html>

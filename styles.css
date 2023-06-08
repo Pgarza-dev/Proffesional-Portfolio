@@ -414,6 +414,9 @@ html {
   background-color: var(--hover-btm-border);
   color: white;
 }
+.href-contact-anchor {
+  text-decoration: none;  
+}
 
 /* PROJECTS SECTION */
 .project-img {
