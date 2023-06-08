@@ -88,11 +88,7 @@ html {
   .nav-li.active {
     left: 0;
   }
-}
-
-
-
-.nav-container {
+}.nav-container {
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -396,6 +392,27 @@ html {
   content: close-quote;
   font-size: 1.5rem;
   color: red;
+}
+.contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+  background-color: var(--hover-btm-border);
+  color: white;
 }
 
 /* PROJECTS SECTION */
