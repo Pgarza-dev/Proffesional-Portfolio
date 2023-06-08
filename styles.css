@@ -469,6 +469,69 @@ html {
   color: black;
   text-decoration: none;
 }
+
+/* CONTACT PAGE */
+.form-submited-message {
+  display: none
+}
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+  margin: 0px auto 0px auto;
+  padding: 0 50px 80px 50px;
+  max-width: 1024px;
+  background-color: #37739d47;
+}
+.input-field {
+  width: 30rem;
+    height: 2.5rem;
+    font-style: italic;
+}
+.input-field:focus {
+  outline: none;
+  border: 1px solid var(--hover-btm-border);
+}
+.textarea-field {
+  width: 30rem;
+    height: 10rem;
+    font-style: italic;
+    
+}
+.textarea-field:focus {
+  outline: none;
+  border: 1px solid var(--hover-btm-border);
+}
+.submit-message-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.submit-message-btn:focus {
+  outline: none;
+}
+.submit-message-btn:hover {
+  background-color: var(--hover-btm-border);
+  color: white;
+}
+
+
+
 /* I have set some media querys to adjust for different screen sizes
 I have used rem becuase it is a relative size unit for the document font size.
 I have used em units at break points to calculat screen size divided by browser font size. */

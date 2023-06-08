@@ -15,8 +15,17 @@
 
 <body>
     <main>
+        <div>
+            <h3></h3>
+          </div>
+        <div class="call-to-action-paragraph-contact-page">
+            <a href="https://www.instagram.com/"><p class="visually-hidden">Instagram</p><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/TheScarecrowMMA"><p class="visually-hidden">Facebook</p><i class="fa-brands fa-facebook"></i></a>
+            <a href=" https://twitter.com/PabloGarzaMMA"><p class="visually-hidden">Twitter</p><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
         <form name="messageForm" id="form" class="contact-form" action="message.html">
-            <div>
+            <div class="form-submited-message" id="success">
                 <p>Message sent.</p>
             </div>
             <div>
@@ -24,6 +33,7 @@
             </div>
             <label for="name">
                 <input
+                class="input-field"
                 type="text"
                 name="name"
                 id="name"
@@ -33,6 +43,7 @@
             </label>
             <label for="email">
                 <input
+                class="input-field"
                 type="email"
                 name="email"
                 id="email"
@@ -42,9 +53,10 @@
             </label>
             <label for="message">
                 <textarea
+                class="textarea-field"
                 name="message"
                 id="message"
-                placeholder="Message"
+                placeholder="Whats on your mind?"
                 required
                 ></textarea>
             </label>
