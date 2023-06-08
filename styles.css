@@ -204,6 +204,31 @@ html {
   line-height: 3rem;
   font-size: 1.5rem;
 }
+.intro-paragraphs {
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.cta-font {
+  font-size: 8rem;
+}
+.cta-btn {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid orangered;
+}
+.cta-btn:hover {
+  background-color: var(--hover-btm-border);
+  color: white;
+}
 .contact-links {
   margin-top: 15px;
   color: black;
@@ -376,7 +401,6 @@ html {
 .portifolio-title h3 {
   margin-bottom: 1rem;
 }
-
 .subject-title {
   color: var(--hover-btm-border);
 }
@@ -409,7 +433,6 @@ html {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
-
 .contact-button:hover {
   background-color: var(--hover-btm-border);
   color: white;
