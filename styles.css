@@ -229,6 +229,10 @@ html {
   background-color: var(--hover-btm-border);
   color: white;
 }
+.icon-container p {
+  font-size: 1.8rem;
+  /* margin-top: 1rem; */
+}
 .contact-links {
   margin-top: 15px;
   color: black;
@@ -250,9 +254,11 @@ html {
   color: orange;
 }
 .logo-img {
-  width: 13%;
+  width: 4rem;
+  height: 3rem;
+  /* width: 13%;
   aspect-ratio: 3/2;
-  object-fit: contain;
+  object-fit: contain; */
 }
 .icon-container {
   display: flex;
@@ -391,12 +397,20 @@ html {
   /* padding: 0 50px 0 50px; */
   /* max-width: 1024px; */
   background-color: #37739d47; 
-  padding: 2rem;
+  padding: 3rem;
 }
 .portifolio-title {
-  padding: 0px 50px 0px 50px;
+  /* padding: 0px 50px 0px 50px;
   margin-top: 10rem;
-  font-size: 1.5rem;
+  padding: 0px 50px 0px 50px; */
+  margin-top: 8rem;
+  font-size: 5.5rem;
+  text-decoration: underline;
+  text-decoration-color: orangered;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .portifolio-title h3 {
   margin-bottom: 1rem;
@@ -405,7 +419,7 @@ html {
   color: var(--hover-btm-border);
 }
 .subject-description {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .myself-section p::before {
   content: open-quote;
@@ -636,7 +650,7 @@ I have used em units at break points to calculat screen size divided by browser 
   .myself-container,
   .portifolio-section {
   flex-direction: column;
-  padding: 0 1em;
+  padding: 1em;
   margin: 0px auto 165px auto;
   }
   .mobile-centered {
