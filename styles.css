@@ -82,7 +82,8 @@ html {
     text-align: center;
     transition: 0.3s;
   }
-  .nav-anchors {
+  .nav-anchors,
+  .contact-nav-anchor {
     margin: 16px 0;
   }
   .nav-li.active {
@@ -106,7 +107,8 @@ html {
 .nav-container h4 {
   font-size: 1.2rem;
 }
-.nav-li {
+.nav-li,
+.contact-nav-li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -114,7 +116,8 @@ html {
   list-style: none;
   width: 25rem;
 }
-.nav-li a {
+.nav-li a,
+.contact-nav-li a {
   position: relative;
   color: rgb(0, 0, 0);
   font-size: 1.2rem;
@@ -132,15 +135,35 @@ html {
   width: 0;
   left: 0;
   bottom: 0px;
-
   transition: 0.3s;
 }
-.nav-li a:hover {
+.contact-nav-li a::after
+{
+  content: "";
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  height: 100%;
+  width: 0;
+  left: 0;
+  bottom: 0px;
+  transition: 0.3s;
+  z-index: -1;
+}
+.nav-li a:hover,
+.contact-nav-li a:hover {
   transition: 0.5s;
 }
 .nav-li a:hover:after {
   width: 100%;
 }
+.contact-nav-li a:hover:after {
+  width: 100%;
+}
+.contact-nav-li a:hover {
+  color: black;
+}
+
 .fa-linkedin-in,
 .fa-github,
 .fa-arrow-up-right-from-square {
@@ -482,12 +505,25 @@ html {
 
 /* CONTACT SECTION */
 .contact-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   gap: 1rem;
   margin: 0px auto 0px auto;
   padding: 0 50px 80px 50px;
-  max-width: 1024px;
+  max-width: 1024px; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* margin: 0px auto 0px auto; */
+  padding: 22px;
+  max-width: 1440px;
+  background-color: #232325;
+  height: 10rem;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 3rem; */
 }
 .programs-used {
   display: flex;
@@ -522,10 +558,28 @@ html {
   border-radius: 10px;
 }
 .contact-container a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
-
+.contact-nav-li::after, 
+.nav-li a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--hover-btm-border);
+    height: 40px;
+    width: 0px;
+    left: 0;
+    bottom: 0px;
+    transition: 0.3s;
+    z-index: -1;
+}
+.footer-title {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 /* CONTACT PAGE */
 .form-submited-message {
@@ -645,6 +699,10 @@ I have used em units at break points to calculat screen size divided by browser 
 @media (max-width: 425px) {
   .welcome-container {
     height: 90vh;
+  }
+  .intro-paragraphs {
+   align-items: center;
+   
   }
   .intro-container {
     display: flex;
