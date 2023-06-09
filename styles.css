@@ -9,7 +9,8 @@
   --subject-title: rgba(0, 0, 255, 0.525);
 }
 body {
-  font-family: "Poppins" "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+ 
+font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif; 
 }
 html {
   scroll-behavior: smooth;
@@ -40,7 +41,6 @@ html {
   border-radius: 10px;
   padding: 1rem;
   font-size: 1.2rem;
-
 }
 .hamburger {
   display: none;
@@ -88,7 +88,8 @@ html {
   .nav-li.active {
     left: 0;
   }
-}.nav-container {
+}
+.nav-container {
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -203,12 +204,16 @@ html {
   text-align: justify;
   line-height: 3rem;
   font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+.linkedin-github-icons {
+  color: rgb(195 191 201);
 }
 .intro-paragraphs {
   display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .cta-font {
   font-size: 8rem;
@@ -334,8 +339,9 @@ html {
   position: relative;
   z-index: 1;
   /* border: 3px solid green; */
-  width: 17rem;
-  height: 26rem;
+  width: 22rem;
+  height: 37rem;
+    border-radius: 16px;
 }
 .my-photo {
   width: 50%;
@@ -350,7 +356,6 @@ html {
   flex-direction: column;
   align-items: center;
 }
-
 .scroll-down-icon > a {
   color: black;
   text-decoration: none;
@@ -359,9 +364,9 @@ html {
 }
 .fa-icon-spacing {
   display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 2.5rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2.5rem;
 }
 
 /* ABOUT ME SECTION */
@@ -393,7 +398,7 @@ html {
   /* margin: 0px auto 400px auto; */
   /* padding: 0 50px 0 50px; */
   /* max-width: 1024px; */
-  background-color: #37739d47; 
+  background-color: #37739d47;
   padding: 3rem;
 }
 .portifolio-title {
@@ -449,20 +454,20 @@ html {
   color: white;
 }
 .href-contact-anchor {
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 /* PROJECTS SECTION */
 .project-img {
   width: 25rem;
-  border:  .2rem solid rgba(243, 243, 243, 0);
+  border: 0.2rem solid rgba(243, 243, 243, 0);
   /* height: 100%; */
   /* border-radius: 20px; */
   /* box-shadow: -20px 20px 20px 0px #d2d2d2; */
 }
 .project-img:hover {
-  border: .2rem solid rgba(243, 243, 243, 0.278);
-  box-shadow: none
+  border: 0.2rem solid rgba(243, 243, 243, 0.278);
+  box-shadow: none;
 }
 .project-description {
   display: flex;
@@ -471,7 +476,7 @@ html {
   text-align: justify;
   line-height: 2rem;
   font-size: 1.2rem;
-  gap: .5rem;
+  gap: 0.5rem;
   justify-content: center;
 }
 
@@ -506,7 +511,7 @@ html {
 
 /* CONTACT PAGE */
 .form-submited-message {
-  display: none
+  display: none;
 }
 .contact-form {
   display: flex;
@@ -523,8 +528,8 @@ html {
 }
 .input-field {
   width: 30rem;
-    height: 2.5rem;
-    font-style: italic;
+  height: 2.5rem;
+  font-style: italic;
 }
 .input-field:focus {
   outline: none;
@@ -532,9 +537,8 @@ html {
 }
 .textarea-field {
   width: 30rem;
-    height: 10rem;
-    font-style: italic;
-    
+  height: 10rem;
+  font-style: italic;
 }
 .textarea-field:focus {
   outline: none;
@@ -563,8 +567,6 @@ html {
   background-color: var(--hover-btm-border);
   color: white;
 }
-
-
 
 /* I have set some media querys to adjust for different screen sizes
 I have used rem becuase it is a relative size unit for the document font size.
@@ -633,30 +635,30 @@ I have used em units at break points to calculat screen size divided by browser 
     flex-direction: column;
   }
   .intro-title {
-  font-size: 1.5rem;
-  width: 100%;
+    font-size: 1.5rem;
+    width: 100%;
   }
   .about-me {
-  width: 100%;
-  padding: 0 1em;
+    width: 100%;
+    padding: 0 1em;
   }
   .about-me-img {
-  width: 80%;
-  height: 20%
+    width: 80%;
+    height: 20%;
   }
   .myself-container,
   .portifolio-section {
-  flex-direction: column;
-  padding: 1em;
-  margin: 0px auto 165px auto;
+    flex-direction: column;
+    padding: 1em;
+    margin: 0px auto 165px auto;
   }
   .mobile-centered {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
   }
   .project-img {
-  width: 100%;
-  height: 20%;
+    width: 100%;
+    height: 20%;
   }
   .contact-links {
     padding: 0 2em;
@@ -667,10 +669,10 @@ I have used em units at break points to calculat screen size divided by browser 
   .img-border {
     width: 39%;
     margin: 0 auto;
-    border-radius: .5em;
+    border-radius: 0.5em;
   }
   .pgarza-dev {
-    padding: 3rem
+    padding: 3rem;
   }
   .portifolio-title {
     padding: 0px 0px 0px 0px;
