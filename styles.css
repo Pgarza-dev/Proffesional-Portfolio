@@ -23,7 +23,10 @@ body {
 }
 .dark-mode-btn {
   padding: 0.5rem;
-  border: 1px solid black;
+  border-top: 1px solid var(--footer-color);
+  border-bottom: 1px solid var(--footer-color);
+  border-right: 3px solid var(--footer-color);
+  border-left: 3px solid var(--footer-color);
   background-color: white;
   height: 62px;
 }
@@ -37,7 +40,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
-  max-width: 1440px;
+  max-width: 2000px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -433,7 +436,7 @@ html {
   align-items: center;
 }
 .scroll-down-icon > a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-style: italic;
   font-size: 1.5rem;
@@ -569,7 +572,7 @@ html {
   gap: 1rem;
   /* margin: 0px auto 0px auto; */
   padding: 22px;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   background-color: var(--footer-color);
   height: 10rem;
   color: white;

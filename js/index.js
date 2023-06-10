@@ -6,21 +6,20 @@ console.log("index.js connected");
 function toggleDarkMode() {
   const body = document.querySelector("body")
   const darkModeButton = document.querySelector(".dark-mode-button")
-  const nav = document.querySelector(".nav-container")
-  const navLink = document.querySelector("nav-li a")
+  const scrollIndicator = document.querySelector(".scroll-flex")
+  
   body.classList.toggle("dark-mode")
   if (body.classList.contains("dark-mode")) {
     darkModeButton.innerHTML = "Light Mode"
     darkModeButton.style.backgroundColor = "white"
     darkModeButton.style.color = "#232325"
-    // nav.style.backgroundColor = "white"
-    // navLink.style.color = "#232325"
+    scrollIndicator.style.color = "white"
+    
   } else {
     darkModeButton.innerHTML = "Dark Mode"
     darkModeButton.style.backgroundColor = "#232325"
     darkModeButton.style.color = "white"
-    // nav.style.backgroundColor = "#232325"
-    // navLink.style.color = "white"
+    scrollIndicator.style.color = "#232325"
   }
 }
 
