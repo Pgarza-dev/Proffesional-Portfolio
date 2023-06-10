@@ -4,13 +4,16 @@
   box-sizing: border-box;
 }
 :root {
+  --github-linkin-icon: rgb(195 191 201);
   --img-border: linear-gradient(#00ccff, #d400d4);
   --hover-btm-border: #ff4500;
   --subject-title: rgba(0, 0, 255, 0.525);
+  --footer-color: #232325;
+  --footer-text: #fff;
+  --build-with-projects: rgba(0, 0, 0, 0.45);
 }
 body {
- 
-font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif; 
+  font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -137,8 +140,7 @@ html {
   bottom: 0px;
   transition: 0.3s;
 }
-.contact-nav-li a::after
-{
+.contact-nav-li a::after {
   content: "";
   position: absolute;
   background-color: white;
@@ -187,7 +189,7 @@ html {
 }
 .link-text,
 .link-text-rainydays {
-  color: rgba(0, 0, 0, 0.45);
+  color: var(--build-with-projects);
   text-decoration: none;
 }
 .link-text:hover {
@@ -230,7 +232,7 @@ html {
   margin-bottom: 4rem;
 }
 .linkedin-github-icons {
-  color: rgb(195 191 201);
+  color: var(--github-linkin-icon);
 }
 .intro-paragraphs {
   display: flex;
@@ -251,7 +253,7 @@ html {
   font-size: 1.2rem;
   cursor: pointer;
   transition: 0.5s;
-  border: 1px solid orangered;
+  border: 1px solid var(--hover-btm-border);
 }
 .cta-btn:hover {
   background-color: var(--hover-btm-border);
@@ -364,7 +366,7 @@ html {
   /* border: 3px solid green; */
   width: 22rem;
   height: 37rem;
-    border-radius: 20px;
+  border-radius: 20px;
 }
 .my-photo {
   width: 50%;
@@ -431,7 +433,7 @@ html {
   margin-top: 8rem;
   font-size: 5.5rem;
   text-decoration: underline;
-  text-decoration-color: orangered;
+  text-decoration-color: var(--hover-btm-border);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -517,7 +519,7 @@ html {
   /* margin: 0px auto 0px auto; */
   padding: 22px;
   max-width: 1440px;
-  background-color: #232325;
+  background-color: var(--footer-color);
   height: 10rem;
   color: white;
   flex-wrap: wrap;
@@ -549,8 +551,8 @@ html {
   text-decoration: none;
 }
 .contact-container i {
-  color: orangered;
-  padding: .5rem;
+  color: var(--hover-btm-border);
+  padding: 0.5rem;
 }
 .contact-container i:hover {
   color: white;
@@ -558,20 +560,19 @@ html {
   border-radius: 10px;
 }
 .contact-container a {
-  color: white;
+  color: var(--footer-text);
   text-decoration: none;
 }
-.contact-nav-li::after, 
-.nav-li a::after {
-    content: "";
-    position: absolute;
-    background-color: var(--hover-btm-border);
-    height: 40px;
-    width: 0px;
-    left: 0;
-    bottom: 0px;
-    transition: 0.3s;
-    z-index: -1;
+.contact-nav-li::after {
+  content: "";
+  position: absolute;
+  background-color: var(--hover-btm-border);
+  height: 40px;
+  width: 0px;
+  left: 0;
+  bottom: 0px;
+  transition: 0.3s;
+  z-index: -1;
 }
 .footer-title {
   font-size: 2rem;
@@ -579,6 +580,16 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+.created-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 5rem;
+  background-color: var(--footer-color);
+  color: var(--footer-text);
+  border-top: 0.1rem solid white;
 }
 
 /* CONTACT PAGE */
@@ -596,7 +607,7 @@ html {
   margin: 0px auto 0px auto;
   padding: 0 50px 80px 50px;
   max-width: 1024px;
-  background-color: #37739d47;
+  background-color: var(--footer-color);
 }
 .input-field {
   width: 30rem;
@@ -699,13 +710,12 @@ I have used em units at break points to calculat screen size divided by browser 
 @media (max-width: 425px) {
   .welcome-container {
     height: 100vh;
-    flex-direction: row; 
+    flex-direction: row;
     margin: 14rem auto;
     position: relative;
   }
   .intro-paragraphs {
-   align-items: center;
-   
+    align-items: center;
   }
   .img-border img {
     width: 15rem;
