@@ -721,6 +721,15 @@ html {
   background-color: var(--hover-btm-border);
   color: white;
 }
+.form-error {
+  display: none;
+  color: white;
+}
+.success-message {
+  display: none;
+  color: white;
+  font-size: ;
+}
 
 /* I have set some media querys to adjust for different screen sizes
 I have used rem becuase it is a relative size unit for the document font size.
@@ -847,6 +856,8 @@ I have used em units at break points to calculat screen size divided by browser 
   .contact-title {
     font-size: 2rem;
   }
+  
+ 
 }
 
 /* 375px / 16px iPhone 6/7/8/X */
