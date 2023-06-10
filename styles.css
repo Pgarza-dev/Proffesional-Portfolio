@@ -593,6 +593,9 @@ html {
 }
 
 /* CONTACT PAGE */
+.contact-page-bg-color {
+  background-color: var(--footer-color);
+}
 .form-submited-message {
   display: none;
 }
@@ -616,7 +619,7 @@ html {
 }
 .input-field:focus {
   outline: none;
-  border: 1px solid var(--hover-btm-border);
+  border: .15rem solid var(--hover-btm-border);
 }
 .textarea-field {
   width: 30rem;
@@ -625,7 +628,7 @@ html {
 }
 .textarea-field:focus {
   outline: none;
-  border: 1px solid var(--hover-btm-border);
+  border: .15rem solid var(--hover-btm-border);
 }
 .submit-message-btn {
   display: flex;
