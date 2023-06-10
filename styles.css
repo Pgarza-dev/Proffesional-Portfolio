@@ -364,7 +364,7 @@ html {
   /* border: 3px solid green; */
   width: 22rem;
   height: 37rem;
-    border-radius: 16px;
+    border-radius: 20px;
 }
 .my-photo {
   width: 50%;
@@ -698,11 +698,18 @@ I have used em units at break points to calculat screen size divided by browser 
 /* 400px / 16px */
 @media (max-width: 425px) {
   .welcome-container {
-    height: 90vh;
+    height: 100vh;
+    flex-direction: row; 
+    margin: 14rem auto;
+    position: relative;
   }
   .intro-paragraphs {
    align-items: center;
    
+  }
+  .img-border img {
+    width: 15rem;
+    height: 32rem;
   }
   .intro-container {
     display: flex;
@@ -760,6 +767,10 @@ I have used em units at break points to calculat screen size divided by browser 
 
 /* 375px / 16px iPhone 6/7/8/X */
 @media (max-width: 23.43em) {
+  /* .welcome-container {
+    margin-top: 20rem auto;
+    
+  } */
   /* .nav-container,
   nav,
   a,
