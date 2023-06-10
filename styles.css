@@ -152,11 +152,46 @@ html {
   transition: 0.3s;
   z-index: -1;
 }
+.return-home-link a {
+  position: relative;
+  color: var(--footer-text);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  z-index: 1;;
+}
+/* .return-home-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  z-index: 1;
+} */
+.return-home-link a::after {
+  content: "";
+  position: absolute;
+  background-color: var(--hover-btm-border);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 0px;
+  transition: 0.3s;
+}
+.return-home-link a:hover::after {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 .nav-li a:hover,
-.contact-nav-li a:hover {
+.contact-nav-li a:hover,
+.return-home-link a:hover {
   transition: 0.5s;
 }
-.nav-li a:hover:after {
+.nav-li a:hover:after{
   width: 100%;
 }
 .contact-nav-li a:hover:after {
@@ -198,15 +233,6 @@ html {
 .link-text-rainydays:hover {
   color: var(--hover-btm-border);
 }
-
-/* .nav-anchors {
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-} */
-
 .welcome-container {
   display: flex;
   flex-direction: column;
@@ -616,6 +642,13 @@ html {
 .return-home-link {
   text-decoration: none;
   color: var(--footer-text);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-style: italic;
 }
 .form-submited-message {
   display: none;
