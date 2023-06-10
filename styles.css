@@ -621,6 +621,20 @@ html {
 }
 
 /* CONTACT PAGE */
+/* .contact-page-nav-container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  right: 0px;
+  padding: 1rem;
+  background: #232325;
+  height: 60px;
+  width: 100%;
+  justify-content: flex-end;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.679);
+} */
 .contact-page-bg-color {
   background-color: var(--footer-color);
 }
@@ -829,6 +843,9 @@ I have used em units at break points to calculat screen size divided by browser 
     font-size: 1.5rem;
     margin: 1rem;
     line-height: 3rem;
+  }
+  .contact-title {
+    font-size: 2rem;
   }
 }
 
