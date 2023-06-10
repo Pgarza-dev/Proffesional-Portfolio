@@ -646,9 +646,8 @@ html {
   justify-content: center;
   color: var(--footer-text);
   border-bottom: .5rem solid var(--hover-btm-border);
-  
-
 }
+
 .message-for-contact {
   color: var(--footer-text);
   font-size: 2rem
@@ -728,7 +727,7 @@ html {
 .success-message {
   display: none;
   color: white;
-  font-size: ;
+  font-size: 3rem;
 }
 
 /* I have set some media querys to adjust for different screen sizes
