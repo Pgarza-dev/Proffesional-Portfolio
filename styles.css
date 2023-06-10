@@ -260,6 +260,17 @@ html {
 .linkedin-github-icons {
   color: var(--github-linkin-icon);
 }
+.linkedin-github-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.linkedin-github-div p {
+  display: none;
+}
 .intro-paragraphs {
   display: flex;
   flex-wrap: wrap;
