@@ -28,9 +28,9 @@ body {
   border-right: 3px solid var(--footer-color);
   border-left: 3px solid var(--footer-color); */
   border-radius: 10px;
-    border: 3px solid black;
+  border: .2rem solid black;
   background-color: white;
-  height: 62px;
+  height: 3rem;
   font-size: 1.2rem;
 }
 .dark-mode {
