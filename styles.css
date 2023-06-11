@@ -143,7 +143,7 @@ html {
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  width: 25rem;
+  width: 23.2rem;
 }
 .nav-li a,
 .contact-nav-li a,
@@ -187,8 +187,10 @@ html {
   text-align: center;
   text-decoration: none;
   letter-spacing: 0.1rem;
-  z-index: 1;;
+  z-index: 1;
+  margin-bottom: 1rem;
 }
+
 .return-home-link a::after {
   content: "";
   position: absolute;
@@ -223,7 +225,7 @@ html {
 .fa-github,
 .fa-arrow-up-right-from-square {
   position: relative;
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
   padding: 0.5rem;
   border-radius: 10px;
   font-size: 2rem;
@@ -242,11 +244,12 @@ html {
 }
 .link-text,
 .link-text-rainydays {
-  color: var(--build-with-projects);
+  color: white;
   text-decoration: none;
 }
+
 .link-text:hover {
-  color: black;
+  color: var(--hover-btm-border);
 }
 .link-text-rainydays:hover {
   color: var(--hover-btm-border);
@@ -525,7 +528,7 @@ html {
   border: none;
   background-color: white;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
