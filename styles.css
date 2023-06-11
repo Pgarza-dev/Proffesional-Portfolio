@@ -23,10 +23,12 @@ body {
 }
 .dark-mode-btn {
   padding: 0.5rem;
-  border-top: 1px solid var(--footer-color);
+  /* border-top: 1px solid var(--footer-color);
   border-bottom: 1px solid var(--footer-color);
   border-right: 3px solid var(--footer-color);
-  border-left: 3px solid var(--footer-color);
+  border-left: 3px solid var(--footer-color); */
+  border-radius: 10px;
+    border: 3px solid black;
   background-color: white;
   height: 62px;
   font-size: 1.2rem;
@@ -384,13 +386,13 @@ html {
   animation: animate 4s ease-in-out infinite;
   animation: fade 4s ease-in-out infinite;
 }
-.img-border::after {
+/* .img-border::after {
   content: "";
   position: absolute;
   inset: 4px;
   background: white;
   border-radius: 16px;
-}
+} */
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -835,8 +837,8 @@ I have used em units at break points to calculat screen size divided by browser 
     align-items: center;
   }
   .img-border img {
-    width: 15rem;
-    height: 32rem;
+    width: 13rem;
+    height: 23rem;
   }
   .intro-container {
     display: flex;
