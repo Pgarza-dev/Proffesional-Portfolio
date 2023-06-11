@@ -14,7 +14,7 @@ function toggleDarkMode() {
   
   body.classList.toggle("dark-mode")
   if (body.classList.contains("dark-mode")) {
-    darkModeButton.innerHTML = "Light Mode"
+    darkModeButton.innerHTML = `Light Mode <i class="fa-solid fa-circle-half-stroke"></i>`
     darkModeButton.style.backgroundColor = "white"
     darkModeButton.style.color = "#232325"
     scrollIndicator.style.color = "white"
@@ -25,7 +25,7 @@ function toggleDarkMode() {
     }
     // projectCodeText.style.color = "white"
   } else {
-    darkModeButton.innerHTML = "Dark Mode"
+    darkModeButton.innerHTML = "Dark Mode <i class='fa-solid fa-circle-half-stroke'></i>"
     darkModeButton.style.backgroundColor = "#232325"
     darkModeButton.style.color = "white"
     scrollIndicator.style.color = "#232325"
