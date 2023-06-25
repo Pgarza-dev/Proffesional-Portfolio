@@ -756,9 +756,9 @@ I have used em units at break points to calculat screen size divided by browser 
 /* 400px / 16px */
 @media (max-width: 425px) {
   .welcome-container {
-    /* height: 100vh; */
+    height: 100vh;
     flex-direction: row;
-    /* margin: 14rem auto; */
+    margin: 14rem auto;
     position: relative;
   }
   .intro-paragraphs {
@@ -790,7 +790,7 @@ I have used em units at break points to calculat screen size divided by browser 
   .portifolio-section {
     flex-direction: column;
     padding: 1em;
-    /* margin: 0px auto 165px auto; */
+    margin: 0px auto 165px auto;
   }
   .mobile-centered {
     display: flex;
