@@ -19,7 +19,7 @@ form.addEventListener("click", function validateForm(event) {
   } else {
     yourNameError.style.display = "block";
   }
-  if (checkLength(message.value, 24 === true)) {
+  if (checkLength(message.value, 5 === true)) {
     emailError.style.display = "none";
   } else {
     emailError.style.display = "block";
@@ -31,7 +31,7 @@ form.addEventListener("click", function validateForm(event) {
   }
   if (
     checkLength(yourName.value, 6) &&
-    checkLength(message.value, 24) &&
+    checkLength(message.value, 5) &&
     validatEmail(email.value)
   ) {
     successMessage.style.display = "block";

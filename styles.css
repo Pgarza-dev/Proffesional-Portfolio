@@ -25,7 +25,7 @@ body {
   padding: 0.5rem;
 
   border-radius: 10px;
-  border: 0.2rem solid black;
+  /* border: 0.2rem solid black; */
   background-color: white;
   height: 3rem;
   font-size: 1.2rem;
@@ -468,12 +468,12 @@ html {
   flex-direction: row;
   justify-content: center;
   gap: 3rem;
-  margin: 3rem auto;
+  margin: 1rem auto;
   background-color: #37739d47;
   padding: 3rem;
 }
 .portifolio-title {
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
   font-size: 5.5rem;
   text-decoration: underline;
   text-decoration-color: var(--hover-btm-border);
