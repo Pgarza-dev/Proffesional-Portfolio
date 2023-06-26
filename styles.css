@@ -643,10 +643,12 @@ html {
 .resume-grid-container {
   /* border: 1px solid white;  */
   padding: 1rem;
+  border-radius: 20px;
 }
 .resume-grid-container:hover {
   /* border: 1px solid orangered;  */
-  box-shadow:0px 0px 20px 1px #ff4500;
+  /* box-shadow:0px 0px 20px 1px #ff4500; */
+  box-shadow:-2px 2px 2px 2px #ff4500;
 }
 .resume-grid ul {
   list-style: none;
@@ -659,6 +661,7 @@ html {
 .resume-right,
 .resume-left {
   display: grid;
+  align-content: space-evenly;
   /* grid-row-gap: 2rem; */
 }
 .resume-right h1 {
@@ -670,6 +673,13 @@ html {
 .resume-left {
   border: 2px solid #ff450038;
   padding: 1rem
+}
+.resume-left:hover {
+  border: 2px solid white
+}
+.resume-left a:hover {
+  color: var(--hover-btm-border);
+  text-decoration: none;
 }
 .resume-kontakt-container {
     display: flex;
