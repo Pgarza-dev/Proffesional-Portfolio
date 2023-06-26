@@ -636,7 +636,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
-  gap: 5rem;
+  gap: 2rem;
   /* grid-template-areas: "resume-left resume-right"; */
   margin: 10rem 2rem;
 }
@@ -652,11 +652,14 @@ html {
   list-style: none;
   padding: 0;
 }
+.resume-grid h2, h3 {
+  color: var(--hover-btm-border);
+}
 
 .resume-right,
 .resume-left {
   display: grid;
-  grid-row-gap: 2rem;
+  /* grid-row-gap: 2rem; */
 }
 .resume-right h1 {
   font-size: 4.5rem;
@@ -665,7 +668,7 @@ html {
   /* text-decoration-color: var(--hover-btm-border); */
 }
 .resume-left {
-  border: 2px solid var(--hover-btm-border);
+  border: 2px solid #ff450038;
   padding: 1rem
 }
 .resume-kontakt-container {
