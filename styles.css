@@ -11,6 +11,7 @@
   --footer-color: #232325;
   --footer-text: #fff;
   --build-with-projects: rgba(0, 0, 0, 0.45);
+  --resume-date-underline: #ff4500;
 }
 body {
   font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
@@ -142,7 +143,7 @@ html {
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  width: 23.2rem;
+  /* width: 23.2rem; */
 }
 .nav-li a,
 .contact-nav-li a,
@@ -630,6 +631,62 @@ html {
   flex-wrap: wrap;
   align-items: center;
 }
+/* RESUME PAGE */
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 5rem;
+  /* grid-template-areas: "resume-left resume-right"; */
+  margin: 10rem 2rem;
+}
+.resume-grid-container {
+  /* border: 1px solid white;  */
+  padding: 1rem;
+}
+.resume-grid-container:hover {
+  /* border: 1px solid orangered;  */
+  box-shadow:0px 0px 20px 1px #ff4500;
+}
+.resume-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resume-right,
+.resume-left {
+  display: grid;
+  grid-row-gap: 2rem;
+}
+.resume-right h1 {
+  font-size: 4.5rem;
+  color: var(--hover-btm-border);
+  /* text-decoration: underline; */
+  /* text-decoration-color: var(--hover-btm-border); */
+}
+.resume-left {
+  border: 2px solid var(--hover-btm-border);
+  padding: 1rem
+}
+.resume-kontakt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.resume-kontakt-container a {
+  color: black;
+  text-decoration: none;
+}
+.language-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* .underline {
+  text-decoration: .2rem  underline;
+  text-decoration-color: var(--resume-date-underline);
+  color: var(--resume-date-underline);
+} */
 
 /* CONTACT PAGE */
 .contact-page-bg-color {
